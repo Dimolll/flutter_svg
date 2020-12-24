@@ -135,8 +135,7 @@ Color parseColor(String colorString) {
   if (namedColor != null) {
     return namedColor;
   }
-
-  throw StateError('Could not parse "$colorString" as a color.');
+  return colorBlack;
 }
 
 // https://www.w3.org/TR/SVG11/types.html#ColorKeywords
